@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <h1>Average monthly weather in alexandria prediction</h1>
+    <form action="/" method="post">
+        <label for="content">Enter date</label>
+        <input type="date" name="content" id="content"
+             min="2009-01-01" max="2015-01-01">
+
+        <input type="submit" value="submit">
+    </form>
+    <p>
+       Forecasted Temp for the month {{ date }} is {{ prediction }} ℃
+    </p>
+{% endblock %}
